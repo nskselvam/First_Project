@@ -10,7 +10,7 @@
   {% for item in Item_data %}
   <ul>
     <li>
-      <a href="{%  url 'details' item.id %}">{{ item.id }} {{ item.items }}</a>
+      <a href="{%  url 'food:details' item.id %}">{{ item.id }} {{ item.items }}</a>
     </li>
   </ul>
   {% endfor %}
