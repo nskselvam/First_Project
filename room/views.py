@@ -18,4 +18,4 @@ def index(request):
     #     'Item' : Item
     # }
     # return render(request,'room/details.html',Context)
-    return HttpResponse('1234')
+    return HttpResponse('Edit')

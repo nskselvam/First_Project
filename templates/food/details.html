@@ -9,6 +9,9 @@
         <h1> {{Item.items}} </h1>
         <h2>{{Item.description}} </h2>
         <h3>{{Item.price}} </h3>
+        <a  href="{% url 'food:index' %}" class="btn btn-success py-1" >Home</a>
+        <a  href="{% url 'food:Editdata' Item.id %}" class="btn btn-primary py-1" >Edit</a>
+        <a  href="{% url 'food:Deletedata' Item.id %}" class="btn btn-danger  py-1" >Delete</a>
       </div> 
   </div>
   </div>    

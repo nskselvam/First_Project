@@ -25,3 +25,16 @@ def Adddata(request):
        return redirect('food:index')
     print(form)
     return render(request,'food/frm_food_add.html',{'form':form})
+
+def Editdata(request,listing_id):
+    item=food_table.objects.get(id=listing_id)
+    form = Forms_add(request.POST or None,instance=item)
+    if form.is_valid():
+        form.save()
+        return redirect('food:index')
+    return render(request,'food/frm_food_add.html',{'form':form,'item':item})
+
+def Deletedata(request,listing_id):
+    item=food_table.objects.get(id=listing_id).delete()
+    # item.delete()
+    return redirect('food:index')

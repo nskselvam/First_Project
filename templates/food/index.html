@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
   {% for item in Item_data %}
-   <div class="row py-2">
+   <div class="row py-1">
         <div class="col-md-3 offset-md-2">
           <img class="card" src="{{item.Img_items}}" height="150px" alt="">
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 py-4">
         <h3>{{ item.items }}</h3>
         <h5>{{ item.description }}</h5>
         <h6>$ {{ item.price }}</h6>
       </div>
-        <div class="col-md-2">
+        <div class="col-md-2 py-7">
           <a href="{%  url 'food:details' item.id %}" class="btn btn-success">Details</a>
         </div>
     </div>

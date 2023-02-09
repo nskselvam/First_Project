@@ -7,4 +7,6 @@ urlpatterns = [
     # path('details/',views.details,name='details'),
     path('<int:listing_id>', views.details, name='details'),
     path('add/',views.Adddata,name='Adddata'),
+    path('Editdata/<int:listing_id>',views.Editdata,name='Editdata'),
+    path('Deletedata/<int:listing_id>',views.Deletedata,name='Deletedata'),
 ]
