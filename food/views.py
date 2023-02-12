@@ -9,6 +9,8 @@ def index(request):
         'Item_data' : Item_data
     }
     return render(request,'food/index.html',Context)
+
+
 def first(requst):
     return HttpResponse('Second Html')
 def details(request,listing_id):

@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 
+
 # Create your models here.
 class food_table(models.Model):
   items=models.CharField(max_length=200)

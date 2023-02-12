@@ -125,7 +125,14 @@ STATICFILES_DIRS=[
         os.path.join(BASE_DIR,'examination/static')
 ]
 
+LOGIN_REDIRECT_URL='food:index'
+LOGIN_URL='login'
+DB_NEW_NAME='01'
+MEDIA_ROOT=os.path.join(BASE_DIR,'Media')
+MEDIA_URL='/Media/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
